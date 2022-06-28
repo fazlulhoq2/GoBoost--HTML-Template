@@ -1,0 +1,208 @@
+.rightContent {
+    position: absolute;
+    left: 260px;
+    height: 100%;
+    width: calc(100% - 260px);
+    //   background-color: rgb(142, 123, 123);
+    overflow-x: hidden;
+
+    .wrapper {
+        padding: 22px;
+
+        .top {
+            h2 {
+                &.title {
+                    font-family: 'Apercu Pro';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 34px;
+                    letter-spacing: -0.5px;
+                    color: #1B1D24;
+                }
+            }
+
+            .btn-wrapper {
+                a {
+                    font-family: 'Apercu Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 19px;
+                    letter-spacing: -0.5px;
+                    color: #63646D;
+                    margin: 0 12px;
+                    background: #FFFFFF;
+                    border: 1px solid #DDDCE3;
+                    border-radius: 4px;
+
+                    span {
+                        margin: 0 5px;
+                    }
+
+                    // &.btn{
+
+                    // }
+                }
+            }
+        }
+
+
+        .filter {
+            margin-top: 20px;
+
+            .date {
+                a {
+                    background: #FFFFFF;
+                    border: 1px solid #DDDCE3;
+                    border-radius: 4px;
+
+                    i {
+                        color: #747A93;
+                        margin: 0 5px;
+                    }
+
+                    span {
+                        font-family: 'Apercu Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 19px;
+                        letter-spacing: -0.5px;
+                        color: #63646D;
+                    }
+                }
+            }
+
+            .filter-btn {
+                a {
+
+                    i {
+                        color: #747A93;
+                        margin: 0 5px;
+                    }
+
+                    span {
+                        font-family: 'Apercu Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 19px;
+                        letter-spacing: -0.5px;
+                        color: #63646D;
+                    }
+                }
+            }
+        }
+
+        .chartOne {
+            position: relative;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 20px;
+            width: 100%;
+            margin-top: 25px;
+
+            .left {
+                padding: 10px;
+                min-height: 440px;
+                background: #FFFFFF;
+                box-shadow: 0px 1px 4px rgba(21, 27, 26, 0.1);
+                border-radius: 4px;
+
+                .wrapper {
+                    margin-top: 5px;
+
+                    h5 {
+                        font-family: $apercuPro;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 16px;
+                        letter-spacing: -0.5px;
+                        color: #5F6166;
+                        margin-bottom: 20px;
+                    }
+
+                    span {
+                        &.number {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 36px;
+                            line-height: 36px;
+                            color: #1B1D24;
+                        }
+
+                        &.growth {
+                            background: #F2F2F2;
+                            border-radius: 30px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 14px;
+                            padding: 6px;
+
+                            &.down {
+                                color: #FF3C49;
+                            }
+
+                            &.up {
+                                color: #00B341
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                min-height: 440px;
+                background: #FFFFFF;
+                box-shadow: 0px 1px 4px rgba(21, 27, 26, 0.1);
+                border-radius: 4px;
+                padding-left: 25px;
+                padding-top: 20px;
+                h5 {
+                    font-family: $apercuPro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: -0.5px;
+                    color: #222A2C;
+                }
+            }
+        }
+        .chartMiddle {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+            width: 100%;
+            margin-top: 25px;
+            .left,.right{
+                padding: 15px;
+                min-height: 440px;
+                background: #FFFFFF;
+                box-shadow: 0px 1px 4px rgba(21, 27, 26, 0.1);
+                border-radius: 4px;
+            }
+            .left{
+                h5 {
+                    font-family: $apercuPro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: -0.5px;
+                    color: #222A2C;
+                }
+            }
+            .right{
+                z-index: 1;
+            }
+            
+        }
+    }
+}

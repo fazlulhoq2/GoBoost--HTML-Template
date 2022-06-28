@@ -1,0 +1,94 @@
+.topbar {
+    background-color: #182869;
+    color: #FFFFFF;
+    padding: 10px 0;
+    .left {
+        img {
+            cursor: pointer;
+        }
+
+        i {
+            color: #FFFFFF;
+            margin: 0 5px;
+        }
+
+        a {
+            font-family: $apercuPro;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 18px;
+            letter-spacing: -0.5px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+    .middle {
+        .nav {
+            margin-top: 10px;
+            ul {
+                display: flex;
+                justify-content: space-around;
+  align-items: center;
+                li {
+                    transition: $transition-long;
+                    margin: 0 35px;
+                      &:first-child{
+                        margin: none;
+                      }
+                      &:last-child{
+                        margin: none;
+                      }
+                    a {
+                        font-family: $apercu;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: rgba(255, 255, 255, 0.8);
+
+                        &:hover,
+                        &.active {
+                            font-family: $apercu;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #FFFFFF;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        i {
+            color: #9EA4BE;
+            font-size: 25px;
+            position: relative;
+            &:nth-child(1) {
+                margin: 0 10px;
+            }
+            &:hover{
+                color: #FFFFFF;
+            }
+            span.count {
+                border-radius: 50%;
+                background-color: #63CCCB;
+                color: #FFFFFF;
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 9px;
+                line-height: 11px;
+                padding: 6px;
+                position: absolute;
+                right: -12px;
+                top: -7px;
+            }
+        }
+    }
+}

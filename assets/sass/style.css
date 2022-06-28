@@ -1,0 +1,444 @@
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Apercu pro ";
+  src: url("../../fnts/Apercu-Pro-Regular.eot");
+  src: url("../../fonts/Apercu-Pro-Regular.woff") format("woff"), url("../../fonts/Apercu-Pro-Regular.woff2") format("woff2"), url("../../fonts/Apercu-Pro-Regular.otf") format("opentype"), url("../../fonts/Apercu-Pro-Regular.svg") format("svg");
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-family: "Apercu";
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  -moz-osx-font-smoothing: grayscale;
+  /* Firefox */
+  -webkit-font-smoothing: antialiased;
+  /* WebKit  */
+}
+
+body {
+  margin: 0;
+  color: var(--paragraph-color);
+  overflow-x: hidden;
+  font-family: "Apercu";
+  font-size: 14px;
+  transition: all 0.3s ease-in !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(125deg, #fb3c7f 0%, #ffc05e 100%);
+  border-radius: 10px;
+}
+
+.container-fluid {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.topbar {
+  background-color: #182869;
+  color: #FFFFFF;
+  padding: 10px 0;
+}
+.topbar .left img {
+  cursor: pointer;
+}
+.topbar .left i {
+  color: #FFFFFF;
+  margin: 0 5px;
+}
+.topbar .left a {
+  font-family: "Apercu pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.topbar .middle .nav {
+  margin-top: 10px;
+}
+.topbar .middle .nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.topbar .middle .nav ul li {
+  transition: all 0.5s ease-in;
+  margin: 0 35px;
+}
+.topbar .middle .nav ul li:first-child {
+  margin: none;
+}
+.topbar .middle .nav ul li:last-child {
+  margin: none;
+}
+.topbar .middle .nav ul li a {
+  font-family: "Apercu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.topbar .middle .nav ul li a:hover, .topbar .middle .nav ul li a.active {
+  font-family: "Apercu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.topbar .right i {
+  color: #9EA4BE;
+  font-size: 25px;
+  position: relative;
+}
+.topbar .right i:nth-child(1) {
+  margin: 0 10px;
+}
+.topbar .right i:hover {
+  color: #FFFFFF;
+}
+.topbar .right i span.count {
+  border-radius: 50%;
+  background-color: #63CCCB;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 11px;
+  padding: 6px;
+  position: absolute;
+  right: -12px;
+  top: -7px;
+}
+
+.main {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #F5F6FA;
+}
+.main ::-webkit-scrollbar {
+  display: none;
+}
+.main .navigation {
+  position: absolute;
+  width: 260px;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #F5F6FA;
+  transition: 0.5s;
+  padding: 0 20px;
+  overflow: auto;
+}
+.main .navigation ul {
+  position: absolute;
+  left: -15%;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.main .navigation ul li {
+  position: relative;
+  width: 118%;
+  list-style: none;
+  margin-top: 5px;
+}
+.main .navigation ul li.others, .main .navigation ul li.site {
+  pointer-events: none;
+  font-family: "Apercu pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #A4A8BB;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.main .navigation ul li.others {
+  margin-top: 50px;
+}
+.main .navigation ul li.user {
+  background: #FFFFFF;
+  border: 1px solid rgba(64, 66, 76, 0.1);
+  border-radius: 4px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+.main .navigation ul li.user a {
+  padding: 7px;
+}
+.main .navigation ul li.user a .icon {
+  height: 35px;
+  width: 35px;
+}
+.main .navigation ul li.user .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .navigation ul li.user .title h3 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #40424C;
+  margin-top: 15px;
+}
+.main .navigation ul li.user .title h3 span {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9FA0A5;
+}
+.main .navigation ul li.user .title i {
+  margin: 0 20px;
+}
+.main .navigation ul li.active, .main .navigation ul li:hover {
+  background: #EAECF4;
+  border-radius: 0px 5px 5px 0px;
+}
+.main .navigation ul li.active a .icon i, .main .navigation ul li:hover a .icon i {
+  color: #5A7AF9;
+}
+.main .navigation ul li.active a .title, .main .navigation ul li:hover a .title {
+  color: #5A7AF9;
+}
+.main .navigation ul li a {
+  position: relative;
+  display: block;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: var(--white);
+}
+.main .navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+  font-family: "Apercu pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  color: #5F6166;
+}
+.main .navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 63px;
+  text-align: center;
+  color: #A4A8BB;
+}
+.main .navigation ul li a .icon i {
+  font-size: 1.5em;
+}
+
+.rightContent {
+  position: absolute;
+  left: 260px;
+  height: 100%;
+  width: calc(100% - 260px);
+  overflow-x: hidden;
+}
+.rightContent .wrapper {
+  padding: 22px;
+}
+.rightContent .wrapper .top h2.title {
+  font-family: "Apercu Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: #1B1D24;
+}
+.rightContent .wrapper .top .btn-wrapper a {
+  font-family: "Apercu Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #63646D;
+  margin: 0 12px;
+  background: #FFFFFF;
+  border: 1px solid #DDDCE3;
+  border-radius: 4px;
+}
+.rightContent .wrapper .top .btn-wrapper a span {
+  margin: 0 5px;
+}
+.rightContent .wrapper .filter {
+  margin-top: 20px;
+}
+.rightContent .wrapper .filter .date a {
+  background: #FFFFFF;
+  border: 1px solid #DDDCE3;
+  border-radius: 4px;
+}
+.rightContent .wrapper .filter .date a i {
+  color: #747A93;
+  margin: 0 5px;
+}
+.rightContent .wrapper .filter .date a span {
+  font-family: "Apercu Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #63646D;
+}
+.rightContent .wrapper .filter .filter-btn a i {
+  color: #747A93;
+  margin: 0 5px;
+}
+.rightContent .wrapper .filter .filter-btn a span {
+  font-family: "Apercu Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #63646D;
+}
+.rightContent .wrapper .chartOne {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  margin-top: 25px;
+}
+.rightContent .wrapper .chartOne .left {
+  padding: 10px;
+  min-height: 440px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(21, 27, 26, 0.1);
+  border-radius: 4px;
+}
+.rightContent .wrapper .chartOne .left .wrapper {
+  margin-top: 5px;
+}
+.rightContent .wrapper .chartOne .left .wrapper h5 {
+  font-family: "Apercu pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  color: #5F6166;
+  margin-bottom: 20px;
+}
+.rightContent .wrapper .chartOne .left .wrapper span.number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #1B1D24;
+}
+.rightContent .wrapper .chartOne .left .wrapper span.growth {
+  background: #F2F2F2;
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 6px;
+}
+.rightContent .wrapper .chartOne .left .wrapper span.growth.down {
+  color: #FF3C49;
+}
+.rightContent .wrapper .chartOne .left .wrapper span.growth.up {
+  color: #00B341;
+}
+.rightContent .wrapper .chartOne .right {
+  min-height: 440px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(21, 27, 26, 0.1);
+  border-radius: 4px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.rightContent .wrapper .chartOne .right h5 {
+  font-family: "Apercu pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #222A2C;
+}
+.rightContent .wrapper .chartMiddle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  width: 100%;
+  margin-top: 25px;
+}
+.rightContent .wrapper .chartMiddle .left, .rightContent .wrapper .chartMiddle .right {
+  padding: 15px;
+  min-height: 440px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(21, 27, 26, 0.1);
+  border-radius: 4px;
+}
+.rightContent .wrapper .chartMiddle .left h5 {
+  font-family: "Apercu pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #222A2C;
+}
+.rightContent .wrapper .chartMiddle .right {
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */

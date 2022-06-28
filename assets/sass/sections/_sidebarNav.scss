@@ -1,0 +1,164 @@
+.main {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+    background-color: #F5F6FA;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navigation {
+        position: absolute;
+        width: 260px;
+        height: 100%;
+        min-height: 100vh;
+        background-color: #F5F6FA;
+        transition: 0.5s;
+        padding: 0 20px;
+        overflow: auto;
+
+        ul {
+            position: absolute;
+            left: -15%;
+            top: 0;
+            width: 100%;
+            height: auto;
+
+            li {
+                position: relative;
+                width: 118%;
+                list-style: none;
+                margin-top: 5px;
+
+                &.others,
+                &.site {
+                    pointer-events: none;
+                    font-family: $apercuPro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 14px;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    color: #A4A8BB;
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                }
+
+                &.others {
+                    margin-top: 50px;
+                }
+
+                &.user {
+                    background: #FFFFFF;
+                    border: 1px solid rgba(64, 66, 76, 0.1);
+                    border-radius: 4px;
+                    //padding: 15px;
+                    margin-bottom: 50px;
+                    margin-left: 20px;
+
+                    a {
+                        padding: 7px;
+
+                        .icon {
+                            height: 35px;
+                            width: 35px;
+                        }
+                    }
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h3 {
+                            font-family: 'DM Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 21px;
+                            color: #40424C;
+                            margin-top: 15px;
+
+                            span {
+                                font-family: 'DM Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: #9FA0A5;
+                            }
+                        }
+
+                        i {
+                            margin: 0 20px;
+                        }
+                    }
+                }
+
+                &.active,
+                &:hover {
+                    background: #EAECF4;
+                    border-radius: 0px 5px 5px 0px;
+
+                    a {
+                        .icon {
+                            i {
+                                color: #5A7AF9;
+                            }
+                        }
+
+                        .title {
+                            color: #5A7AF9;
+                            ;
+                        }
+                    }
+                }
+
+                a {
+                    position: relative;
+                    display: block;
+                    display: flex;
+                    width: 100%;
+                    text-decoration: none;
+                    color: var(--white);
+
+                    .title {
+                        position: relative;
+                        display: block;
+                        padding: 0 10px;
+                        height: 60px;
+                        line-height: 60px;
+                        text-align: start;
+                        white-space: nowrap;
+                        font-family: $apercuPro;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        // line-height: 22px;   
+                        letter-spacing: -0.5px;
+                        color: #5F6166;
+                    }
+
+                    .icon {
+                        position: relative;
+                        display: block;
+                        min-width: 60px;
+                        height: 60px;
+                        line-height: 63px;
+                        text-align: center;
+                        color: #A4A8BB;
+
+                        i {
+                            font-size: 1.50em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
